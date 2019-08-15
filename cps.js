@@ -1,7 +1,7 @@
 $(()=>{
 	let count = 0, time = 5;
 	const scr = document.getElementById('screen');
-	const btn = document.getElementById('btn');
+	const btn = document.getElementById('clickbtn');
 	$("#settime").click(()=>{
 		time = +$("#time").innerHTML;
 	})
