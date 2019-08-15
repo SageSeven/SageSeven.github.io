@@ -2,25 +2,19 @@
 <html>
 <head>
 	<title>测测点击速度</title>
+	<link rel="stylesheet" type="text/css" href="cps.css">
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="cps.js"></script>
 </head>
 <body>
-	<p id="screen" style="border:1px solid; height:25px; width:50px; text-align: center;">0</p>
-	<button id="btn" align="center" style="height: 100px; width: 100px;">点击</button>
-	<script type="text/javascript">
-		let count = 0;
-		const scr = document.getElementById('screen');
-		const btn = document.getElementById('btn');
-		let event0 = function(){
-			if(count === 0){
-				setTimeout(() => {
-					btn.removeEventListener("click",event0);	
-				},5000);
-			}
-			count++;
-			scr.textContent = count + "";
-		}
-		btn.addEventListener("click",event0);
-
-	</script>
+	<div class="screen">
+		<p>0</p>
+	</div>
+	<button id="clickbtn">点击</button>
+	<div class="timesetter">
+		<label for="time" id="timelabel">时间（秒）：</label>
+		<input type="text" id="time" placeholder="5">
+		<button id="settime"></button>
+	</div>
 </body>
 </html>
