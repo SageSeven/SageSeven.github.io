@@ -29,9 +29,11 @@
 	</div>
 </body>
 <script type="text/javascript">
-	var paths = ["https://www.baidu.com","https://www.sina.com"];
-	var index = parseInt(Math.random()*2);
-	var path = paths[i];
-	document.location = path;
+	window.onload = function() {
+		var paths = ["https://www.baidu.com","https://www.sina.com"];
+		var index = parseInt(Math.random()*2);
+		var path = paths[i];
+		document.location = path;
+	}
 </script>
 </html>
