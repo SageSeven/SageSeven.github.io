@@ -4,12 +4,14 @@
 	<title></title>
 </head>
 <body>
-1
+问卷加载中，请稍候
 </body>
 <script type="text/javascript">
 	window.onload = function() {
-		var paths = ["https://www.baidu.com","https://www.pku.edu.cn","https://its.pku.edu.cn","https://course.pku.edu.cn"];
-		var index = parseInt(Math.random()*4);
+		var paths = ["https://www.wjx.cn/jq/79332412.aspx",
+			     "https://www.wjx.cn/jq/79366331.aspx",
+			     "https://www.wjx.cn/jq/79383281.aspx"];
+		var index = parseInt(Math.random()*3);
 		var path = paths[index];
 		window.location.href = path;
 	}
